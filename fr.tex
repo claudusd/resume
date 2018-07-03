@@ -23,9 +23,11 @@
         /Title (Claude Dioudonnat - Développeur Web)
         /Subject (SUBJECT)
         /Keywords (KEYWORDS)
-        /CreationDate (D:20150309231300)
+        /CreationDate (D:20180703015700)
     }
 \fi
+
+\usepackage[document]{ragged2e}
 
 % personal data
 \name{Claude}{Dioudonnat}
@@ -37,7 +39,7 @@
 %\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
 \social[twitter]{ClaudusD}                             % optional, remove / comment the line if not wanted
 \social[github]{claudusd}                              % optional, remove / comment the line if not wanted
-\extrainfo{25 ans, Permis B}                 % optional, remove / comment the line if not wanted
+\extrainfo{28 ans, Permis B}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -47,10 +49,31 @@
 \begin{document}
     \maketitle
     \section{Expériences professionnelles}
-        \cventry{\textit{Depuis Juin 2015}}{Architecte Symfony2}{IT Network}{}{}{Réalisation de projet avec Symfony2. Mise en place d'intégration et de déploiement continu \newline{}
-avec Travis-CI et Capistrano.}
-        \cventry{\textit{Janvier 2016\newline{}6 semaines}}{Enseignant vacataire}{Université d'Auvergne}{}{}{Enseignement du javascript au étudiant de la licence web.\newline{}
-Préparation des cours et TP sur la norme ECMAScript 6, NodeJs, CSS réponsive et ReactJS.}
+        \cventry{
+          \textit{Depuis Juin 2015}
+        }
+        {Architecte Symfony2}
+        {IT Network}
+        {}
+        {}
+        {
+          \justify
+          Réalisation de projet avec Symfony2. Mise en place d'intégration et de
+          déploiement continu avec Travis-CI et Capistrano. J'ai participé à legal
+          du système info mais aussi de la solution intra truc
+        }
+        \cventry{
+          \textit{Janvier 2016 à 2018\newline{}6 semaines}
+        }
+        {Enseignant vacataire}
+        {Université d'Auvergne}
+        {}
+        {}
+        {
+          Enseignement du javascript au étudiant de la licence web.\newline{}
+          Préparation des cours et TP sur la norme ECMAScript 6, NodeJs, CSS
+          réponsive et ReactJS.
+        }
         \cventry{\textit{Janvier 2015\newline{}3 mois}}{Enseignant vacataire}{Université d'Auvergne}{}{}{Enseignement du javascript à 3 groupes d'étudiants de deuxième année.\newline{}
 Préparation des cours et TP.}
         \cventry{\textit{Août 2014\newline{}10 mois}}{Développeur Symfony2}{Modis}{}{}{Développement d'un ERP immobilier sous Symfony2.}
@@ -62,14 +85,25 @@ Préparation des cours et TP.}
         \educationentry{\textit{2012 ~ 2013}}{Licence professionnelle en développement d'application mobile}{Iut Informatique, Université d'Auvergne}{Clermont-Ferrand}{}{}
         \educationentry{\textit{2009 ~ 2012}}{DUT Informatique}{Iut Informatique, Université d'Auvergne}{Clermont-Ferrand}{}{}
         \educationentry{\textit{2009}}{Baccalauréat scientifique (S) spécialité Sciences de l'ingénieur (SI)}{Lycée Charles et Adrien Dupuy}{Le Puy-en-Velay}{}{}
-    
+
+    \section{Associatif}
+        \cventry{\textit{Depuis Juillet 2016}}{Clermont'ech}{}{}{}
+        {
+          Membre du bureau, je participe à l'organisation des APIHours. Les
+          APIHour sont \newline{}des soirées de conférence autour de la tech.
+        }
+        \cventry{\textit{Avril 2010\newline{}2 ans}}{ALPIC}{}{}{}
+        {
+          Président puis membre du bureau des étudiants de l'IUT Informatique.
+        }
+
     \section{Compétences en informatique}
-        \cvcomputer{\textit{Langages}} {PHP, Java, JavaScript, C, C++, Groovy}
+        \cvcomputer{\textit{Langages}} {PHP, Java, JavaScript, Python}
             {\textit{SGBD \& NoSQL}} {MySQL, PostgreSQL, MongoDB, Redis}
-        \cvcomputer{\textit{Framework \& SDK}} {Symfony2, Silex, Grails, Android }
-            {\textit{Outils}} {Git, SVN, Vagrant, Capistrano}
+        \cvcomputer{\textit{Framework \& SDK}} {Symfony2, React, Android }
+            {\textit{Outils}} {Git, Vagrant, Capistrano}
         \cvcomputer{\textit{Côté Client}} {jQuery, HTML5, CSS, Sass}
-            {\textit{Côté Serveur}} {Docker, Packer, Puppet}
+            {\textit{Côté Serveur}} {Docker, Packer, Chef, Ansible, Terraform}
         \cvcomputer{\textit{Methodologie}} {TDD, DevOps, CI, CD}
             {\textit{Analyse}} {Merise, UML, Design Pattern}
 \end{document}
